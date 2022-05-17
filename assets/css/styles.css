@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 1.2)), url("/assets/images/website-html-code-on-the-laptop-display-closeup-photo-information-technology-website-coding-standards-for-web-design-programmer-developer-screen-2E9TBG7.jpeg");
+    background-size:cover;
+    background-position:center;
+    height: 55vh;
+}
+
+nav{
+    height: 60px;
+    background-color: rgba(107, 107, 107, 0.6);
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul{
+    height: 50px;
+    margin-top: 25px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li{
+    display: inline-block;   
+    height: 45px;
+}
+
+nav ul li a{
+    color: #fff;
+    font-size: 24px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav ul li a:hover{
+    border-bottom: 2px solid rgb(255, 203, 106);
+    color: rgb(165, 143, 99);
+    transition: 0.05s;
+}
+
+#head-shot{
+    border-radius: 350px;
+    height: 350px;
+    width: 350px;
+    object-fit:cover;
+    position: relative;
+    margin-top: 200px;
+    margin-left: 50px;
+}
+
+#second-section{
+    background-color: #fff;
+    height: 55vh;
+}
+
+#third-section{
+    background-color: rgb(202, 206, 210);
+    height: 55vh;
+}
+
+#fourth-section{
+    background-color: #fff;
+    height: 55vh;
+}
+
+footer{
+    background-color: #333;
+    padding: 40px;
+    font-size: 80%;
+}
+
+.social-links ul{
+    list-style: none;
+    float: right;
+}
+
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.social-links li:last-child{
+    margin-right: 0;
+}
+
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    transition: color 0.2s;
+}
+
+.social-links li a:link,
+.social-links li a:visited{
+    font-size: 160%;
+}
+
+.ion-social-facebook:hover{
+color: #3b5998;
+}
+footer .ion-social-linkedin:hover{
+    color: #0a66c2;
+}
+.ion-social-instagram:hover{
+    color: #ed4956;
+}
+
+footer p{
+    text-align: center;
+    color: #888;
+    font-size: 150%;
+    margin: auto;
+}
