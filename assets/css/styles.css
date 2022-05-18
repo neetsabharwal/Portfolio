@@ -8,6 +8,30 @@ a{
     text-decoration: none;
 }
 
+section{
+    padding: 20px 0px;
+}
+
+h2{
+    font-size: 150%;
+    word-spacing: 2px;
+    font-weight: lighter;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+h2::after{
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
 @keyframes anime {
     from {
         background-position: 0 100%;
@@ -71,17 +95,70 @@ nav ul li a:hover{
 
 #second-section{
     background-color: #fff;
-    height: 55vh;
+    height: 65vh;
 }
 
 #third-section{
     background-color: rgb(202, 206, 210);
-    height: 55vh;
+    height: 65vh;
 }
 
 #fourth-section{
     background-color: #fff;
-    height: 55vh;
+    height: 65vh;
+}
+
+label{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#name::placeholder,
+#email::placeholder,
+textarea::placeholder,
+.submit{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+*:focus{
+    outline: none;
+}
+
+textarea{
+    height: 100px;
+}
+
+.contact-form{
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+textarea{
+    width: 100%;
+    padding: 7px;
+    margin-top: 5px;
+    margin-bottom: 13px;
+    border-radius: 3px;
+    border: 1px solid #555;
+    color: #555;
+}
+
+.submit{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 200px;
+    border: 1px solid #e67e22;
+    background-color: #e67e22;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.submit:hover,
+.submit:active{
+    background-color: #cf6d17;
 }
 
 footer{

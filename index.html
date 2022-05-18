@@ -8,19 +8,19 @@
     </head>
     <body>
         <header>
-            <nav>
+            <nav id="home">
                 <ul>
                     <li>
-                        <a href="#">Home</a>
+                        <a href="#home">Home</a>
                     </li>
                     <li>
-                        <a href="#">About</a>
+                        <a href="#second-section">About</a>
                     </li>
                     <li>
-                        <a href="#">Projects</a>
+                        <a href="#third-section">Projects</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="#fourth-section">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -36,8 +36,44 @@
         <section id="third-section">
 
         </section>
-        <section id="fourth-section">
-
+        <section class="section-form" id="fourth-section">
+            <div>
+                <h2>Happy to hear from you</h2>
+            </div>
+            <div>
+                <form method="post" action="#" class="contact-form">
+                    <div>
+                        <div>
+                            <label for="name">Name</label>
+                        </div>
+                        <div>
+                            <input type="text" name="name" id="name" placeholder="Your name" required>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="email">Email</label>
+                        </div>
+                        <div>
+                            <input type="email" name="email" id="email" placeholder="Your email" required>
+                        </div>
+                    </div>
+                    <div>
+                        <label>Drop me a line</label>
+                    </div>
+                    <div>
+                        <textarea name="message" placeholder="Your message."></textarea>
+                    </div>
+                    <div>
+                        <div>
+                            <label>&nbsp;</label>
+                        </div>
+                        <div>
+                            <a href="#home"><button class="submit">Send it!</button></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </section>
         <footer>
             <div class="foot-note">
