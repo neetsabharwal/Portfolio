@@ -8,8 +8,9 @@ a{
     text-decoration: none;
 }
 
-section{
-    padding: 20px 0px;
+body{
+    display: flex;
+    flex-direction: column;
 }
 
 h2{
@@ -44,7 +45,7 @@ h3{
 
 @keyframes anime {
     from {
-        background-position: 0 100%;
+        background-position: 0 110%;
       }
       to {
         background-position: 0 0;
@@ -59,6 +60,7 @@ header{
     height: 65vh;
     animation: anime 20s linear infinite;
     margin-bottom: 30px;
+    display: flex;
 }
 
 nav{
@@ -94,6 +96,11 @@ nav ul li a:hover{
     transition: 0.05s;
 }
 
+#img-div{
+    display: flex;
+    flex-shrink: 1;
+}
+
 #head-shot{
     border-radius: 375px;
     height: 375px;
@@ -107,14 +114,12 @@ nav ul li a:hover{
 
 #second-section{
     background-color: #fff;
-    height: 88vh;
 }
 
 #tech-stack{
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-top: 10px;
 }
 
 .tech{
@@ -178,29 +183,45 @@ nav ul li a:hover{
 
 #third-section{
     background-color: rgb(242, 245, 248);
-    height: 90vh;
+    padding-top: 20px;
+    padding-bottom: 35px;
 }
 
 #proj-imgs{
     display: flex;
     justify-content: space-around;
-    padding-top: 30px;
+    padding-top: 15px;
+    flex-wrap: wrap;
 }
 
 .projectimage{
     height: 450px;
     width: 450px;
-    opacity: 0.80;
+    opacity: 0.65;
+    border-radius: 15px;
 }
 
 .projectimage:hover{
     opacity: 1;
-    transform: scale(1.03);
+    transform: scale(1.08);
+    border-radius: 5px;
+}
+
+#flex1{
+    flex-shrink: 0;
+}
+
+#flex2{
+    flex-shrink: 0;
+}
+
+#flex3{
+    flex-shrink: 0;
 }
 
 #fourth-section{
     background-color: #fff;
-    height: 65vh;
+    padding: 20px 0;
 }
 
 label{
@@ -258,9 +279,10 @@ textarea{
 
 footer{
     background-color: #333;
-    padding: 40px;
+    padding: 20px;
     font-size: 80%;
-    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .social-links ul{
@@ -317,3 +339,57 @@ footer p{
 footer p:hover{
     color: #fff;
 }
+
+@media screen and (max-width: 1000px){
+    #head-shot{
+        border-radius: 250px;
+        height: 250px;
+        width: 250px;
+        object-fit:cover;
+        position: relative;
+        margin-top: 150px;
+        margin-left: 50px;
+    }
+    header{
+        height: 50vh;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    nav{
+        height: 60px;
+    }
+    nav ul{
+        margin-top: 20px;
+    }
+    #third-section{
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+    #img-div{
+        margin: auto;
+    }
+
+    #head-shot{
+        position: static;
+        margin: auto;
+        margin-top: 150px;
+    }
+
+    #second-section{
+        margin-top: 35px;
+    }
+
+    #third-section{
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .social-links ul{
+        padding-top: 10px;
+    }
+} 
